@@ -6,7 +6,7 @@ border: 1px solid #D7DFE9;
 border-radius: 4px;
 list-style-type: none;
 border-radius: 4px;
-padding: 20px 20px 0px 20px;
+padding: 20px 20px 10px 20px;
 width: 300px;
 margin-right: 15px;
 margin-bottom: 15px;
@@ -67,4 +67,8 @@ export const Delete=styled.button`
 background-color: transparent;
 border-width: 0px;
 cursor: pointer;
+`
+export const DeleteContainer=styled.div`
+display:flex;
+justify-content:flex-end;
 `
