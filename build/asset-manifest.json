@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ResourceManagement/static/css/main.8043e4ac.css",
+    "main.js": "/ResourceManagement/static/js/main.7a55ef3e.js",
+    "static/js/787.28cb0dcd.chunk.js": "/ResourceManagement/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/ResourceManagement/index.html",
+    "main.8043e4ac.css.map": "/ResourceManagement/static/css/main.8043e4ac.css.map",
+    "main.7a55ef3e.js.map": "/ResourceManagement/static/js/main.7a55ef3e.js.map",
+    "787.28cb0dcd.chunk.js.map": "/ResourceManagement/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8043e4ac.css",
+    "static/js/main.7a55ef3e.js"
+  ]
+}

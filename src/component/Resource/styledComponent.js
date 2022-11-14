@@ -63,3 +63,8 @@ font-weight: 400;
 font-size: 14px;
 color: #7E858E;
 `
+export const Delete=styled.button`
+background-color: transparent;
+border-width: 0px;
+cursor: pointer;
+`

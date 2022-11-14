@@ -79,6 +79,12 @@ const {tabItem,resourceList}=this.state
  return findLength
 }
 
+onDelete=id=>{
+    const {resourceList}=this.state
+    const deleteItem=resourceList.filter(each=>each.id!==id)
+    this.setState({resourceList:deleteItem})
+}
+
     render(){
         const {tabItem,searchInput,isLoading}=this.state
         const getFilter=this.getFilterData()
@@ -102,7 +108,7 @@ const {tabItem,resourceList}=this.state
  {searchFilter.length>0 ? (
     <ResourceListContainer>
     {searchFilter.map(each=>(
-     <Resource resourceLists={each} key={each.id}/>
+     <Resource resourceLists={each} key={each.id} deleteItems={this.onDelete}/>
      ))}
  </ResourceListContainer> 
  ): (

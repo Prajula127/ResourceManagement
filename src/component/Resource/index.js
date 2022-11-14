@@ -1,8 +1,13 @@
-import {ListItems,CardContainer,Image,Icon,ListDetail,Title,Category,Link,Desc} from './styledComponent'
+import {ListItems,CardContainer,Image,Icon,ListDetail,Title,Category,Link,Desc,Delete} from './styledComponent'
+import {RiDeleteBinLine} from 'react-icons/ri'
 
 const Resource=props=>{
-    const {resourceLists}=props
-    const {title,iconUrl,link,description,category}=resourceLists
+    const {resourceLists,deleteItems}=props
+    const {title,iconUrl,link,description,category,id}=resourceLists
+
+     const deleteItem=()=>{
+           deleteItems(id)
+     }
 
     return(
         <ListItems>
@@ -17,6 +22,7 @@ const Resource=props=>{
             </CardContainer>
             <Link href={link} target="_blank" rel="noreferrer">{link}</Link>
             <Desc>{description}</Desc>
+            <Delete type="button" onClick={deleteItem}><RiDeleteBinLine/></Delete>
         </ListItems>
     )
 }
